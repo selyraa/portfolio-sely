@@ -1,16 +1,20 @@
 import { projectsData } from '@/data/projectsData';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from 'react-icons/fa';
-import type { Metadata } from 'next';
+import { FaArrowLeft, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const getProject = (id: number) => {
   return projectsData.find((project) => project.id === id);
 };
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const project = getProject(parseInt(params.id, 10));
+// Update metadata generation to handle async params
+export async function generateMetadata(
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Metadata> {
+  const { id } = await params;
+  const project = getProject(parseInt(id, 10));
   if (!project) {
     return { title: 'Project Not Found' };
   }
@@ -20,8 +24,21 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
-export default function ProjectDetailPage({ params }: { params: { id: string } }) {
-  const project = getProject(parseInt(params.id, 10));
+// This function remains the same for static generation
+export function generateStaticParams() {
+  return projectsData.map((project) => ({
+    id: project.id.toString(),
+  }));
+}
+
+// Update the page component to handle async params
+export default async function ProjectDetailPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}) {
+  const { id } = await params;
+  const project = getProject(parseInt(id, 10));
 
   if (!project) {
     notFound();

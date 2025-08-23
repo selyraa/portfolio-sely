@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const navLinks = [
   { title: 'About', path: '/#about' },
@@ -10,7 +10,6 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
