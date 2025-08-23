@@ -3,10 +3,10 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 const navLinks = [
-  { title: 'About', path: '#about' },
-  { title: 'Experience', path: '#experience' },
-  { title: 'Portfolio', path: '#portfolio' },
-  { title: 'Contact', path: '#contact' },
+  { title: 'About', path: '/#about' },
+  { title: 'Experience', path: '/#experience' },
+  { title: 'Portfolio', path: '/#portfolio' },
+  { title: 'Contact', path: '/#contact' },
 ];
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${scrolled ? 'bg-secondary bg-opacity-90 backdrop-blur-sm' : 'bg-transparent'}`}>
-      <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-2">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 lg:px-8 py-2">
         <Link href="/" className="text-2xl md:text-3xl text-white font-semibold">
           selyraa<span className="text-primary">.</span>
         </Link>

@@ -1,10 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaProjectDiagram, FaSearch, FaBug } from 'react-icons/fa';
-import { SiMysql, SiNextdotjs, SiTailwindcss, SiTypescript, SiLaravel, SiFlutter, SiPhp, SiFigma, SiJira, SiGit, SiPostgresql } from 'react-icons/si';
-import Image from 'next/image';
+import { FaBug, FaLaptopCode, FaProjectDiagram, FaSearch } from 'react-icons/fa';
+import { SiFigma, SiFlutter, SiGit, SiJira, SiLaravel, SiMysql, SiNextdotjs, SiPhp, SiPostgresql, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
-// Combined skills array with a category property for labeling
 const allSkills = [
   // Categories: 'Frontend', 'Backend', 'Tools'
   { category: 'Frontend', icon: <SiNextdotjs />, name: 'Next.js' },
@@ -24,16 +22,11 @@ const allSkills = [
 ];
 
 const AboutSection = () => {
-  let lastCategory = ''; // Variable to track the last category for labeling
+  let lastCategory = ''; 
 
   return (
     <section id="about" className="py-20">
-      {/* ================================================ */}
-      {/* NEW TWO-COLUMN LAYOUT: TECH STACK + ABOUT ME     */}
-      {/* ================================================ */}
       <div className="grid md:grid-cols-2 gap-12 items-start xl:gap-16">
-        
-        {/* LEFT COLUMN: TECHNICAL TOOLKIT */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +40,6 @@ const AboutSection = () => {
               lastCategory = skill.category;
               return (
                 <div key={index} className="relative flex flex-col items-center justify-center p-3 bg-accent rounded-lg h-28 hover:bg-primary/20 transition-all duration-300 group">
-                  {/* Category Label */}
                   {showCategory && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-primary px-3 py-1 text-xs font-semibold rounded-full border border-primary/30 z-10">
                       {skill.category}
@@ -61,7 +53,6 @@ const AboutSection = () => {
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: ABOUT ME BIO */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -78,7 +69,6 @@ const AboutSection = () => {
         </motion.div>
       </div>
 
-      {/* CORE COMPETENCIES SECTION (Remains below for additional context) */}
       <div className="mt-20">
         <h3 className="text-center text-3xl font-bold text-white mb-8">My Core Competencies</h3>
         <div className="grid md:grid-cols-3 gap-8">

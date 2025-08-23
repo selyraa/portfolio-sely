@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-            <div className="container p-12 flex justify-between items-center">
+            <div className="max-w-7xl mx-auto p-8 sm:p-12 flex justify-between items-center">
                 <span>selyraa<span className="text-primary">.</span></span>
                 <div className="socials flex gap-4">
                     <a href="https://github.com/selyraa" target="_blank" className="text-[#ADB7BE] hover:text-white"><FaGithub size={24} /></a>

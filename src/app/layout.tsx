@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ 
   subsets: ["latin"],
@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Sely Ruli Amanda | Web Developer Portfolio",
-  description: "Portfolio Sely Ruli Amanda, seorang mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web.",
+  description: "Portfolio of Sely Ruli Amanda, a passionate Informatics Engineering student specializing in web development.",
 };
 
 export default function RootLayout({
@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-secondary text-white`} suppressHydrationWarning={true}>
+      <body className={`${poppins.className} bg-secondary text-white`}>
         <Navbar />
-        <main className="container mx-auto px-12 py-4">{children}</main>
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">{children}</main>
         <Footer />
       </body>
     </html>
