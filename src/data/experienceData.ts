@@ -12,6 +12,18 @@ export interface Experience {
 export const experienceData: Experience[] = [
     {
         id: 1,
+        role: 'Quality Assurance',
+        company: 'Rakit Digital',
+        period: 'Nov 2024 - Aug 2025',
+        description: [
+            'Responsible for ensuring the quality and functionality of web applications developed by the team. My tasks included:',
+            'Developing and executing test plans and test cases.',
+            'Identifying and documenting bugs and issues.',
+        ],
+        type: 'Freelance',
+    },
+    {
+        id: 2,
         role: 'Teaching Assistant',
         company: 'State Polytechnic of Malang',
         period: 'February 2025 - Maret 2025',
@@ -26,27 +38,18 @@ export const experienceData: Experience[] = [
         type: 'Freelance',
     },
     {
-        id: 2,
+        id: 3,
         role: 'System Analyst',
         company: 'PT SISI (Internship)',
         period: 'July 2024 - December 2024',
         description: [
-            'Mengembangkan aplikasi booking ruang rapat dari awal hingga akhir.',
-            'Membangun RESTful API menggunakan Laravel untuk backend.',
-            'Membuat panel admin web yang responsif dan fungsional dengan Laravel Filament.',
-            'Mengembangkan aplikasi mobile cross-platform untuk pengguna akhir menggunakan Flutter.',
-        ],
-        type: 'Internship',
-    },
-    {
-        id: 3,
-        role: 'Full Stack Developer',
-        company: 'PT INKA (Internship)',
-        period: 'February 2024 - June 2024',
-        description: [
-            'Developed and implemented over five key features for the "Online Invoice Verification System" using the Laravel framework, significantly improving internal business processes.',
-            'Engaged in the end-to-end development cycle, from database design and backend logic implementation to front-end interface development.',
-            'Collaborated with the IT team to ensure system stability and efficiency.',
+            'Internship as a System Analyst in the Research and Development Division.',
+            'Assist functional positions and business analysts in creating technical documentation, compiling user manuals for menus in the system.',
+            'Create documents and conduct System Integration Testing (SIT) on the e-procurement system.',
+            'Communicate with the development team and support team regarding development process updates, and translate technical information into technical documents and verbal explanations that are easily understood by the functional team.',
+            'Developing a meeting room booking application using Laravel as the backend, Laravel Filament as the frontend for the web platform, and Flutter as the frontend for the mobile platform.',
+            'Optimized WordPress website performance by analyzing Core Web Vitals, auditing with Lighthouse & GTmetrix, optimizing assets (images, CSS, JavaScript), and configuring caching & CDN plugins.',
+            'Documented audit results, configuration changes, and recommended optimizations for long-term improvements.',
         ],
         type: 'Internship',
     },
@@ -74,5 +77,16 @@ export const experienceData: Experience[] = [
         ],
         type: 'Internship',
     },
-    
-];
+    // {
+    //     id: 6,
+    //     role: 'Full Stack Developer',
+    //     company: 'PT INKA (Internship)',
+    //     period: 'February 2024 - June 2024',
+    //     description: [
+    //         'Developed and implemented over five key features for the "Online Invoice Verification System" using the Laravel framework, significantly improving internal business processes.',
+    //         'Engaged in the end-to-end development cycle, from database design and backend logic implementation to front-end interface development.',
+    //         'Collaborated with the IT team to ensure system stability and efficiency.',
+    //     ],
+    //     type: 'Internship',
+    // },
+    ];

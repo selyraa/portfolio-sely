@@ -18,6 +18,7 @@ const ExperienceSection = () => {
         {/* KOLOM KIRI: TIMELINE DENGAN SCROLLBAR MODERN           */}
         {/* ====================================================== */}
         <div
+          // Tambahkan 'group/timeline' untuk mengontrol hover dari parent
           className="md:col-span-4 max-h-[450px] overflow-y-auto pr-4 timeline-scrollbar">
           <div className="relative">
             <div className="absolute left-4 top-0 h-full w-0.5 bg-accent"></div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const contacts = [
   { icon: <FaEnvelope />, text: 'selyra.123@gmail.com', href: 'mailto:selyra.123@gmail.com' },
-  { icon: <FaWhatsapp />, text: '+62 857-3374-403', href: 'https://wa.me/628xxxxxxxx' }, // GANTI NOMOR WHATSAPP
+  { icon: <FaWhatsapp />, text: '+62 857-3374-4803', href: 'https://wa.me/6285733744803' }, // REMEMBER TO UPDATE WHATSAPP LINK IF NEEDED
   { icon: <FaLinkedin />, text: 'Sely Ruli Amanda', href: 'https://www.linkedin.com/in/sely-ruli-amanda-b2a25a1b3/' },
   { icon: <FaGithub />, text: 'selyraa', href: 'https://github.com/selyraa' },
   { icon: <FaInstagram />, text: 'selyra._', href: 'https://www.instagram.com/selyra._' },
@@ -15,7 +15,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 text-center">
       <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
       <p className="text-lg text-[#ADB7BE] mb-12 max-w-2xl mx-auto">
-        Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang kerja. Jangan ragu untuk menghubungi saya melalui salah satu platform di bawah ini.
+        I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out to me through any of the platforms below.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
