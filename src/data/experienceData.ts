@@ -6,12 +6,24 @@ export interface Experience {
     company: string;
     period: string;
     description: string[]; 
-    type: 'Internship' | 'Professional' | 'Freelance';
+    type: 'Internship' | 'Professional' | 'Freelance' ;
 }
 
 export const experienceData: Experience[] = [
     {
         id: 1,
+        role: 'IT Business Analyst',
+        company: 'BPJS Kesehatan',
+        period: 'Sept 2024 - Now',
+        description: [
+            'Analyze information system needs based on business requirements submitted by users',
+            'Conduct user requirements gatherings with users',
+            'Prepare Project Charter documents or Change Requests for information system development',
+        ],
+        type: 'Professional',
+    },
+    {
+        id: 2,
         role: 'Quality Assurance',
         company: 'Rakit Digital',
         period: 'Nov 2024 - Aug 2025',
@@ -23,7 +35,7 @@ export const experienceData: Experience[] = [
         type: 'Freelance',
     },
     {
-        id: 2,
+        id: 3,
         role: 'Teaching Assistant',
         company: 'State Polytechnic of Malang',
         period: 'February 2025 - Maret 2025',
@@ -38,7 +50,7 @@ export const experienceData: Experience[] = [
         type: 'Freelance',
     },
     {
-        id: 3,
+        id: 4,
         role: 'System Analyst',
         company: 'PT SISI (Internship)',
         period: 'July 2024 - December 2024',
@@ -50,18 +62,6 @@ export const experienceData: Experience[] = [
             'Developing a meeting room booking application using Laravel as the backend, Laravel Filament as the frontend for the web platform, and Flutter as the frontend for the mobile platform.',
             'Optimized WordPress website performance by analyzing Core Web Vitals, auditing with Lighthouse & GTmetrix, optimizing assets (images, CSS, JavaScript), and configuring caching & CDN plugins.',
             'Documented audit results, configuration changes, and recommended optimizations for long-term improvements.',
-        ],
-        type: 'Internship',
-    },
-    {
-        id: 4,
-        role: 'Full Stack Developer',
-        company: 'PT INKA (Internship)',
-        period: 'February 2024 - June 2024',
-        description: [
-            'Developed and implemented over five key features for the "Online Invoice Verification System" using the Laravel framework, significantly improving internal business processes.',
-            'Engaged in the end-to-end development cycle, from database design and backend logic implementation to front-end interface development.',
-            'Collaborated with the IT team to ensure system stability and efficiency.',
         ],
         type: 'Internship',
     },
