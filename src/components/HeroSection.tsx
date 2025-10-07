@@ -60,7 +60,7 @@ const HeroSection = () => {
                    group-hover:shadow-[0_0_35px_rgba(6,182,212,0.7)] 
                    transition-all duration-300">
               <Image
-                src="/images/profile.jpg" // Pastikan nama file foto benar
+                src="/images/profile-sely.png" // Pastikan nama file foto benar
                 alt="Sely Ruli Amanda"
                 layout="fill"
                 objectFit="cover"
