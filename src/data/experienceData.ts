@@ -54,7 +54,7 @@ export const experienceData: Experience[] = [
             'Query Handling with DB Facade & Query Builder.',
             'Object-Relational Mapping (ORM) with Eloquent.',
             'In addition to lecturing, I also graded assignments and provided feedback to help students enhance their understanding of Laravel.',
-        ]
+        ],
         type: 'Freelance',
     },
     {
@@ -72,7 +72,7 @@ export const experienceData: Experience[] = [
             'Developing a meeting room booking application using Laravel as the backend, Laravel Filament as the frontend for the web platform, and Flutter as the frontend for the mobile platform.',
             'Optimized WordPress website performance by analyzing Core Web Vitals, auditing with Lighthouse & GTmetrix, optimizing assets (images, CSS, JavaScript), and configuring caching & CDN plugins.',
             'Documented audit results, configuration changes, and recommended optimizations for long-term improvements.',
-        ]
+        ],
         type: 'Internship',
     },
     {
@@ -86,7 +86,7 @@ export const experienceData: Experience[] = [
         jobdesc: [
             'Engaged in the end-to-end development cycle, from database design and backend logic implementation to front-end interface development.',
             'Collaborated with the IT team to ensure system stability and efficiency.',
-        ]
+        ],
         type: 'Internship',
     },
     // {
