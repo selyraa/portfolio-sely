@@ -20,11 +20,11 @@ const HeroSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                'System Analyst',
-                1500,
-                'Quality Assurance',
+                'Business System Analyst',
                 1500,
                 'Project Management',
+                1500,
+                'Quality Assurance',
                 1500,
                 'Web Developer',
                 1500,
